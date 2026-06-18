@@ -347,7 +347,7 @@ export default function HomePage() {
           <div className="max-w-5xl mx-auto">
             <div className="mb-6 p-4 bg-muted/50 rounded-lg border border-border">
               <p className="text-sm text-muted-foreground">
-                <span className="font-semibold">Hypothèses de comparaison :</span> T1, basse saison à 65€/nuit, coefficients appliqués pour haute et moyenne saisons, financement plateforme en moyenne 150€/mois.
+                <span className="font-semibold">Hypothèses de comparaison :</span> T1, prix base: 100€/nuit haute saison, 80€/nuit moyenne saison, 65€/nuit basse saison. Taux d'occupation: 85% haute saison (52 nuits), 50% moyenne saison (46 nuits), 15% basse saison (31 nuits). Loyer annuel 500€/mois, financement plateforme en moyenne 400€/mois.
               </p>
             </div>
 
@@ -361,28 +361,28 @@ export default function HomePage() {
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
                     <div className="p-3 bg-red-50 rounded-lg border border-red-200">
-                      <p className="text-sm text-muted-foreground">Haute saison (juil-août)</p>
-                      <p className="text-lg font-bold text-red-600">97,50€/nuit × 45 nuits</p>
-                      <p className="text-sm font-medium">= 4 387,50€</p>
+                      <p className="text-sm text-muted-foreground">Haute saison (juil-août, 85%)</p>
+                      <p className="text-lg font-bold text-red-600">100€/nuit × 52 nuits</p>
+                      <p className="text-sm font-medium">= 5 200€</p>
                     </div>
                     <div className="p-3 bg-yellow-50 rounded-lg border border-yellow-200">
-                      <p className="text-sm text-muted-foreground">Moyenne saison (mai-jun-sep)</p>
-                      <p className="text-lg font-bold text-yellow-600">81,25€/nuit × 30 nuits</p>
-                      <p className="text-sm font-medium">= 2 437,50€ (pour 3 mois)</p>
+                      <p className="text-sm text-muted-foreground">Moyenne saison (mai-jun-sep, 50%)</p>
+                      <p className="text-lg font-bold text-yellow-600">80€/nuit × 46 nuits</p>
+                      <p className="text-sm font-medium">= 3 680€ (pour 3 mois)</p>
                     </div>
                     <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                      <p className="text-sm text-muted-foreground">Basse saison (oct-avr)</p>
-                      <p className="text-lg font-bold text-blue-600">65€/nuit × 12 nuits</p>
-                      <p className="text-sm font-medium">= 780€ (pour 7 mois)</p>
-                      <p className="text-xs text-muted-foreground mt-1">⚠️ Problème: très peu de revenus en basse saison!</p>
+                      <p className="text-sm text-muted-foreground">Basse saison (oct-avr, 15%)</p>
+                      <p className="text-lg font-bold text-blue-600">65€/nuit × 31 nuits</p>
+                      <p className="text-sm font-medium">= 2 015€ (pour 7 mois)</p>
+                      <p className="text-xs text-muted-foreground mt-1">⚠️ Revenus très faibles en basse saison</p>
                     </div>
                   </div>
                   <div className="pt-3 border-t border-border">
                     <p className="text-xs text-muted-foreground mb-2">Revenu annuel</p>
                     <p className="text-2xl font-bold">
-                      <span className="text-orange-600">7 605€</span>
+                      <span className="text-orange-600">10 895€</span>
                       <span className="text-sm text-muted-foreground font-normal block mt-1">
-                        (4387,50 + 2437,50 + 780)
+                        (5200 + 3680 + 2015)
                       </span>
                     </p>
                   </div>
@@ -399,26 +399,26 @@ export default function HomePage() {
                   <div className="space-y-3">
                     <div className="p-3 bg-green-50 rounded-lg border border-green-200">
                       <p className="text-sm text-muted-foreground">Loyer locataire</p>
-                      <p className="text-lg font-bold text-green-600">550€/mois</p>
+                      <p className="text-lg font-bold text-green-600">500€/mois</p>
                       <p className="text-xs text-muted-foreground">✓ Régulé et accessible</p>
                     </div>
                     <div className="p-3 bg-green-50 rounded-lg border border-green-200">
                       <p className="text-sm text-muted-foreground">Financement plateforme (en moyenne)</p>
-                      <p className="text-lg font-bold text-green-600">150€/mois</p>
+                      <p className="text-lg font-bold text-green-600">400€/mois</p>
                       <p className="text-xs text-muted-foreground">✓ Redistribution des commissions saisonnières</p>
                     </div>
                     <div className="p-3 bg-emerald-50 rounded-lg border border-emerald-200">
                       <p className="text-sm text-muted-foreground">Revenu total propriétaire</p>
-                      <p className="text-lg font-bold text-emerald-600">700€/mois</p>
+                      <p className="text-lg font-bold text-emerald-600">900€/mois</p>
                       <p className="text-xs text-muted-foreground">✓ Garanti même en basse saison!</p>
                     </div>
                   </div>
                   <div className="pt-3 border-t border-border">
                     <p className="text-xs text-muted-foreground mb-2">Revenu annuel garanti</p>
                     <p className="text-2xl font-bold">
-                      <span className="text-emerald-600">8 400€</span>
+                      <span className="text-emerald-600">10 800€</span>
                       <span className="text-sm text-muted-foreground font-normal block mt-1">
-                        (700€ × 12 mois)
+                        (900€ × 12 mois)
                       </span>
                     </p>
                     <div className="mt-3 pt-3 border-t border-border">
@@ -441,7 +441,7 @@ export default function HomePage() {
                     </div>
                     <h4 className="font-semibold mb-2">Stabilité</h4>
                     <p className="text-sm text-muted-foreground">
-                      Revenus garantis même en basse saison: 700€/mois vs 111€/mois
+                      Revenus garantis même en basse saison: 900€/mois vs 399€/mois
                     </p>
                   </div>
                 </CardContent>
@@ -455,7 +455,7 @@ export default function HomePage() {
                     </div>
                     <h4 className="font-semibold mb-2">Impact social</h4>
                     <p className="text-sm text-muted-foreground">
-                      Loyer régulé (550€) accessible aux résidents locaux
+                      Loyer régulé (500€) accessible aux résidents locaux
                     </p>
                   </div>
                 </CardContent>
@@ -469,7 +469,7 @@ export default function HomePage() {
                     </div>
                     <h4 className="font-semibold mb-2">Revenus comparables</h4>
                     <p className="text-sm text-muted-foreground">
-                      Revenus équivalents (8 400€ vs 7 605€) avec stabilité garantie toute l'année
+                      -95€/an (10 800€ vs 10 895€) mais garantis et plus stables toute l'année
                     </p>
                   </div>
                 </CardContent>
