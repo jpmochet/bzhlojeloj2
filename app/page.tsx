@@ -153,7 +153,7 @@ export default function HomePage() {
                   <TrendingUp className="w-6 h-6 text-ocean" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Plateforme (8%)</h3>
+                  <h3 className="font-semibold mb-1">Plateforme (5%)</h3>
                   <p className="text-sm text-muted-foreground">
                     Fonctionnement et developpement de la plateforme solidaire.
                   </p>
@@ -164,7 +164,7 @@ export default function HomePage() {
                   <Home className="w-6 h-6 text-bretagne" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Logement annuel (5%)</h3>
+                  <h3 className="font-semibold mb-1">Logement annuel (7%)</h3>
                   <p className="text-sm text-muted-foreground">
                     Financent les locations à l&apos;année accessibles à prix régulés pour les résidents locaux, redistribués en ancrage local sur la même commune ou de façon dégressive sur les communes environnantes.
                   </p>

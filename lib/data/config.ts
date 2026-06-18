@@ -1,11 +1,11 @@
 import type { AdminConfig } from '@/lib/types'
 
 export const defaultConfig: AdminConfig = {
-  // Commission: 16% total = 8% platform + 5% housing + 3% services
+  // Commission: 15% total = 5% platform + 7% housing + 3% services
   commission: {
-    totalPct: 0.16,
-    platformPct: 0.08,
-    housingPct: 0.05,
+    totalPct: 0.15,
+    platformPct: 0.05,
+    housingPct: 0.07,
     servicesPct: 0.03,
   },
 
