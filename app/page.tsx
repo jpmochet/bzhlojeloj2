@@ -42,10 +42,14 @@ export default function HomePage() {
             </h1>
             <p className="text-xl text-muted-foreground text-balance">
               Découvrez la Bretagne Autrement en adoptant un modèle de location plus juste et solidaire.
-              Notre plateforme réinvestit une partie des commissions sur les locations saisonnières
-              pour créer des logements à l&apos;année accessibles à prix régulés pour les résidents locaux
-              et pour permettre aux propriétaires d&apos;accéder à une offre de services financés
+              Notre plateforme est compétitive face aux plateformes internationales déséquilibrant le marché du logement :
+              commission plus avantageuse et propriétaires pouvant transformer une part de celle-ci en services locaux.
+              Elle ne remplace pas les bails classiques, mais vise à transformer une part des locations saisonnières
+              (habituellement accessibles uniquement aux touristes) en logements à l&apos;année à prix régulé pour les résidents locaux.
+              Elle réinvestit une partie des commissions sur les locations saisonnières
+              pour financer ces logements accessibles et pour permettre aux propriétaires d&apos;accéder à une offre de services financés
               par l&apos;emploi de prestataires locaux sur la commune ou communes voisines.
+              Ces services locaux ont aussi des répercussions indirectes positives sur le confort des touristes saisonniers.
             </p>
           </div>
         </div>
@@ -326,6 +330,288 @@ export default function HomePage() {
                     Commission moindre pour continuer à bénéficier de l&apos;offre de services de prestataires locaux
                   </p>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Tenant Benefits - Annual Rental Section */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Les gains pour les locataires à l&apos;année
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Un accès au logement régulé et stable pour les résidents locaux
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Affordable Rent */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Home className="h-5 w-5 text-bretagne" />
+                  Loyer régulé et accessible
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  500€/mois pour un T1 à prix social
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Bien moins cher que le marché privé
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Stability */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-ocean" />
+                  Bail 1 an sans hausse de prix
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Loyer fixe sur 1 an, au-delà cela dépend des redistributions de points
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Possibilité de transformation en bail classique avec accord du propriétaire
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Local Community */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-coral" />
+                  Vivre en Bretagne à un prix juste
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Pour les résidents locaux, finement ciblés
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Accès prioritaire pour habitants de la commune
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Services Support */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Wrench className="h-5 w-5 text-coral" />
+                  Accès aux services de la communauté
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Réductions et priorité auprès des prestataires locaux
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Services d&apos;entretien à coût réduit
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Accessible Housing */}
+            <Card className="md:col-span-2">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Home className="h-5 w-5 text-bretagne" />
+                  Enfin des logements accessibles
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Accès à des logements qui n&apos;existaient jusqu&apos;à présent que comme locations saisonnières pour touristes
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Réservés aux résidents locaux pour transformer des espaces touristiques en vrais logements
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Seasonal Tenant Benefits Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Les gains pour les locataires saisonniers
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Découvrez l&apos;authenticité de la Bretagne à des prix justes
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Fair Pricing */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <TrendingUp className="h-5 w-5 text-ocean" />
+                  Prix justes et transparents
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Pas de frais cachés, commission réduite répercutée
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ 15% de commission pour financer le logement social
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Quality Homes */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Home className="h-5 w-5 text-bretagne" />
+                  Logements de qualité
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Sélection rigoureuse des propriétés
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Vérifiées et entretenues avec soin
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Authentic Experience */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-coral" />
+                  Expérience authentique de Bretagne
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Logements de propriétaires locaux sélectionnés
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Une vraie immersion bretonne
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Social Impact */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-ocean" />
+                  Impact social direct
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Chaque réservation finance le logement social
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Contribuez à rendre la Bretagne plus accessible
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Provider Benefits Section */}
+      <section className="py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Les gains pour les prestataires locaux
+            </h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Développez votre activité en soutenant l&apos;économie locale
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Steady Business */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <TrendingUp className="h-5 w-5 text-ocean" />
+                  Portefeuille de clients réguliers
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Accès à la communauté de propriétaires de la plateforme
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Demandes de services garanties et régulières
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Fair Compensation */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Wallet className="h-5 w-5 text-bretagne" />
+                  Rémunération équitable
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Points de service financés par les commissions
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Transparence totale sur les tarifs
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Local Network */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-coral" />
+                  Visibilité locale renforcée
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Profil et avis sur la plateforme
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Création de réputation dans votre commune
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Community Support */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-ocean" />
+                  Support de communauté
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-sm text-muted-foreground">
+                  Intégré dans un réseau solidaire et local
+                </p>
+                <p className="text-sm font-medium">
+                  ✓ Développement économique durable
+                </p>
               </CardContent>
             </Card>
           </div>
