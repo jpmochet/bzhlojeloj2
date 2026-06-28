@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Home, Building2, BarChart3, Calendar, User, Settings } from 'lucide-react'
+import { Menu, X, Home, Building2, BarChart3, Calendar, User, Settings, Puzzle } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
@@ -16,6 +16,7 @@ const navItems = [
   { href: '/prestataire', label: 'Espace prestataire', icon: Building2 },
   { href: '/impact', label: 'Impact', icon: BarChart3 },
   { href: '/anticipation', label: 'Anticipation N+1', icon: Calendar },
+  { href: '/crossword', label: 'Mot Croisé', icon: Puzzle },
   { href: '/admin', label: 'Administration', icon: Settings },
 ]
 

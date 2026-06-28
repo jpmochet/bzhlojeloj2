@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic'
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Home, Wrench, TrendingUp, MapPin, Calendar, Settings, Wallet, CheckCircle } from 'lucide-react'
+import { ArrowRight, Home, Wrench, TrendingUp, MapPin, Calendar, Settings, Wallet, CheckCircle, Puzzle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { SearchBar } from '@/components/search-bar'
@@ -111,6 +111,20 @@ export default function HomePage() {
                 <p className="text-muted-foreground mb-4">Rejoignez notre réseau de prestataires et trouvez des opportunités de services</p>
                 <div className="flex items-center gap-2 text-teal font-medium group-hover:gap-3 transition-all">
                   Rejoindre <ArrowRight className="w-4 h-4" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Crossword */}
+            <Link href="/crossword" className="group">
+              <div className="rounded-2xl border-2 border-transparent bg-gradient-to-br from-purple-light/20 to-purple-light/5 p-8 hover:border-purple-500 hover:shadow-lg transition-all h-full">
+                <div className="w-16 h-16 rounded-xl bg-purple-100 flex items-center justify-center mb-4 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                  <Puzzle className="w-8 h-8 text-purple-600 group-hover:text-white" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Mot Croisé</h3>
+                <p className="text-muted-foreground mb-4">Testez vos connaissances sur BZHlojeloj</p>
+                <div className="flex items-center gap-2 text-purple-600 font-medium group-hover:gap-3 transition-all">
+                  Jouer <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
             </Link>
