@@ -62,7 +62,7 @@ const defaultFilters: Filters = {
 export default function LogementsPage() {
   const [filters, setFilters] = useState<Filters>(defaultFilters)
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-  const queryCities = SearchParamsClient
+const queryCities = SearchParamsClient
 
   const activeFilterCount = useMemo(() => {
     let count = 0
