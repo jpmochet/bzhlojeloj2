@@ -1,5 +1,4 @@
 'use client'
-
 import SearchParamsClient from './SearchParamsClient'
 import { useState, useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
