@@ -10,7 +10,7 @@ const solutions: Record<string, string> = {
   "5,2":"P","5,3":"R","5,4":"O","5,5":"P","5,6":"R","5,7":"I","5,8":"E","5,9":"T","5,10":"A","5,11":"I","5,12":"R","5,13":"E",
   "6,2":"P","6,3":"R","6,4":"E","6,5":"S","6,6":"T","6,7":"A","6,8":"T","6,9":"A","6,10":"I","6,11":"R",
   "7,2":"P","7,3":"L","7,4":"A","7,5":"T","7,6":"E","7,7":"F","7,8":"O","7,9":"R","7,10":"M","7,11":"E",
-  "8,1":"R","8,2":"E","8,3":"D","8,4":"I","8,5":"S","8,6":"T","8,7":"R","8,8":"I","8,9":"B","8,10":"U","8,11":"T","8,12":"I","8,13":"O",
+  "8,1":"R","8,2":"E","8,3":"D","8,4":"I","8,5":"S","8,6":"T","8,7":"R","8,8":"I","8,9":"B","8,10":"U","8,11":"E","8,12":"R",
   "9,2":"B","9,3":"R","9,4":"E","9,5":"T","9,6":"A","9,7":"G","9,8":"N","9,9":"E",
   "10,2":"S","10,3":"O","10,4":"L","10,5":"I","10,6":"D","10,7":"A","10,8":"I","10,9":"R","10,10":"E",
   "11,2":"I","11,3":"M","11,4":"P","11,5":"A","11,6":"C","11,7":"T",
@@ -30,7 +30,7 @@ export default function CrosswordPage() {
     [-1, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     [-1, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1],
     [-1, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1],
-    [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1],
     [-1, 9, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, -1],
     [-1, 10, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1],
     [-1, 11, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1],
@@ -194,10 +194,10 @@ export default function CrosswordPage() {
             <li>7. Outil numérique qui organise les locations et la redistribution.</li>
             <li>8. Mécanisme solidaire qui finance logements et services.</li>
             <li>9. Région où naît le projet.</li>
-            <li>10. Modèle fondé sur le partage et l&apos;entraide.</li>
+            <li>10. Nature du modèle proposé par la plateforme.</li>
             <li>11. Effet concret du modèle sur le territoire.</li>
             <li>12. Territoire prioritaire pour les habitants.</li>
-            <li>13. Professionnels indépendants du secteur.</li>
+            <li>13. Professionnels du territoire.</li>
           </ul>
         </div>
       </div>
